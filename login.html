@@ -1,49 +1,28 @@
 <html>
-<head><title>login</title>
+<head>
+<title> LOGIN </title>
 <style>
-
-
-.login{
-
-position:relative;
-top:50px;
-left:400px;
-height: 220px;
-width: 400px;
-padding:10px;
-background-color:#8B4513;
-opacity:0.5;
-
-}
-.button:hover{
-	transform:scale(1.05);
-	}
 body{
-background-image:url("presidency.jpg");
-background-repeat:no-repeat;
-background-size:cover;
+text-align: center;++
 }
 </style>
-
-
-
-</style>
-
+</head>
 <body>
+<h1 align="center">LOGIN </h1>
 
-<form method="post" action="login.php">
- 	
-		<div class="log"><center> LOGIN TO  VOTE</center></div>
- 	<br/>
-        <div class="login">
-		<div id="hel">
-		<center><h1>Login</h1></center>
-		<center><input type="text" placeholder="Username" name="username" required></br><br>
-		<input type="password" placeholder="Password" name="password" required></br><br>
-		<input type="submit" value="login" class="button"></center>
-                </div>
-         </div>
-</form>
+<form action="login.php" method="post">
+USERNAME:<input type="text" name="name"/> <br>
+PASSWORD:<input type="password" name="password" /> <br>
+
+
+user_type:<select> 
+  <option>admin</option> 
+  <option> user</option>
+  
+</select>
+</br>
+</br>
+<input type="submit" name="login" value="login" /> 
+</form> 
 </body>
 </html>
-
